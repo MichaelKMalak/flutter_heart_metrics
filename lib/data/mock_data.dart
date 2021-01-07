@@ -1,7 +1,7 @@
 import 'dart:core';
 
 List<Map<DateTime, double>> getMockData() {
-  List<Map<DateTime, double>> result = [];
+  final List<Map<DateTime, double>> result = [];
   dataPoints.asMap().entries.forEach(
         (point) => result.add(
             {DateTime.now().subtract(Duration(days: point.key)): point.value}),
